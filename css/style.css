@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* empilha elementos verticalmente */
+    align-items: center;    /* centraliza horizontalmente */
+    background: url('../img/pexels-mikhail-nilov-6963017 (1).jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.332);
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+label, .container > h1{
+    color: #011526;
+}
+
+.container > h1{
+    margin: 15px 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="number"]{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+input[type="submit"]{
+    height: 50px;
+    background-color: black;
+    color: white;    
+    cursor: pointer;
+}
+
+/* Container do resultado */
+.resultadoContainer {
+    display: flex;
+    flex-direction: column; /* empilha o conteúdo verticalmente */
+    align-items: center;    /* centraliza horizontalmente */
+    margin-top: 20px;       /* espaço entre form e resultado */
+    width: 100%;
+}
+
+.resultado {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 400px;       /* evita ficar muito estreito */
+    max-width: 90%;          /* não estoura em telas pequenas */
+}

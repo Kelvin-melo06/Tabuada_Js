@@ -8,6 +8,23 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Gerador de Tabuada</h1>
+
+        <form action="#" id="tabuadaForm">
+
+            <label for="numero">Escolha a tabuada:</label>
+            <input type="number" name="number" id="numero" min="1"  required>
+
+            <label for="Limite">Multiplicar até:</label>
+            <input type="number" name="Limit" id="Limite" min="1"  required>
+
+            <input type="submit" value="Gerar">
+        </form>
+
+    </div>
+    <div class="resultadoContainer">
+        <div class="resultado" id="resultado"></div>
+    </div>
 </body>
 </html>
